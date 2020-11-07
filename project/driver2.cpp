@@ -74,7 +74,7 @@ int main()
   cout << "rv from deleteFile /bb is " << r <<(r==-3 ? " correct":" fail")<<endl;
   r = c1->myFS->deleteFile(const_cast<char *>("/y"), 2);
   cout << "rv from deleteFile /y is " << r <<(r==0 ? " correct":" fail")<<endl;
-  r = c1->myFS->deleteFile(const_cast<char *>("/b"), 2);
+  r = c1->myFS->deleteFile(const_cast<char *>("/y"), 2);
   cout << "rv from deleteFile /y is " << r <<(r==-1 ? " correct":" fail")<<endl;
   f1 = c1->myFS->openFile(const_cast<char *>("/y"), 2, 'w', -1);
   cout << "rv from openFile /y is " << f1 << (f1==-1 ? " correct": " fail")<<endl;
