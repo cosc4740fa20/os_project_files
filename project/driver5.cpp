@@ -55,11 +55,11 @@ int main()
   f1 = c2->myFS->openFile(const_cast<char *>("/o/o/o/a"), 8, 'w', -1);
   cout << "rv from openFile /o/o/o/a is " << f1 << (f1>0 ? " correct": " fail")<< endl;
   r = c2->myFS->writeFile(f1, buf3, 600);
-  cout << "rv from writeFile /o/o/o/b is " << r << (r==600 ? " correct write 600 Fs": " fail")<< endl;
+  cout << "rv from writeFile /o/o/o/a is " << r << (r==600 ? " correct write 600 Fs": " fail")<< endl;
   r = c2->myFS->writeFile(f1, buf4, 600);
-  cout << "rv from writeFile /o/o/o/b is " << r << (r==600 ? " correct write 600 Is": " fail")<< endl;
+  cout << "rv from writeFile /o/o/o/a is " << r << (r==600 ? " correct write 600 Is": " fail")<< endl;
   r = c2->myFS->closeFile(f1);
-  cout << "rv from closeFile /o/o/o/b is " << r << (r==0 ? " correct":" fail")<<endl;
+  cout << "rv from closeFile /o/o/o/a is " << r << (r==0 ? " correct":" fail")<<endl;
 
   r = c2->myFS->createFile(const_cast<char *>("/o/o/o/b"), 8);
   cout << "rv from createFile /o/o/o/b is " << r <<(r==0 ? " correct": " fail") <<endl;
